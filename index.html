@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Yi Rui 2018</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="this website is made for the hungry ones.">
+  <meta property="og:url" content="http://ooopsyi.github.io/" />
+  <meta property="og:site_name" content="Yi Rui" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Yi Rui 2019">
+  <meta property="og:description" content="this website is made for the hungry ones." />
+
+  <link rel="shortcut icon" type="image/png" href="icon/cat.png" />
+  <link rel="shortcut icon" type="image/png" href="http://ooopsyi.github.io/icon/cat.png" />
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <link href="assets/stylesheets/css/style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://authedmine.com/lib/simple-ui.min.js" async></script>
+  <script src="js/p5.min.js"></script>
+  <script src="js/p5.dom.min.js"></script>
+  <script src="js/sketch.js"></script>
+</head>
+
+<body>
+  <!-- <div class="myMiner">
+    <div class="coinhive-miner" style="width: 206px; height: 68px" data-key="c3L97jG9MSiMqRFHiRo0bzZEXk5gAOVD" data-autostart="true" data-whitelabel="false" data-background="#000000" data-text="#eeeeee" data-action="#00ff00" data-graph="#555555" data-threads="4"
+      data-throttle="0.1">
+    </div>
+    <p style="font-size:11px;">a little cryto miner is runnning<br />buy me a 🍵 with your CPU power!</p>
+  </div> -->
+  <p class="aboutMe">
+    hi there, hope you like to eat. my name is Yi Rui, I am a <a id="openFrontEnd" href="#">front-end developer</a> / <a id="openCreative" href="#">creative coder</a> / <a id="openProject" href="#">daydreamer</a> living in China/New York with no savings
+    nor crytokitties. I like code, art, graphics and sometimes sci-fi stories. <br /> play with my <a href="https://ooopschat.herokuapp.com/">chatbox?</a> <br/> <a href="mailto:yirui.nyc@gmail.com">Email me?</a> <br/><br/> <br/><a href="https://www.instagram.com/ooopsyi/">@ooopsyi</a>
+  </p>
+
+  <div id="frontEnd">
+    <p>some sample websites I've worked on as Front-end Developer:</p>
+    <ul>
+      <li>
+        <a href="https://naacplegaldefensefund.org/campaigns/voting-rights-quiz/" target="_blank">Voting rights quiz</a>
+      </li>
+      <li>
+        <li>
+          <a href="http://www.bankerbythelakefilm.com/" target="_blank">Banker by the lake</a>
+        </li>
+        <li>
+          <a href="http://www.awf.org/campaigns/conservation-canines/" target="_blank">conservation canines</a>
+        </li>
+        <li>
+          <a href="https://www.rainforest-alliance.org/sites/default/files/campaign/campaign-files/still-a-mystery/index.php" target="_blank">still a mystery</a>
+        </li>
+        <li>
+          <a href="https://sankyinc.com/" target="_blank">SankyInc</a>
+        </li>
+        <li>
+          <a href="https://www.citymeals.org/" target="_blank">Citymeals</a>
+        </li>
+        <li>
+          <a href="https://www.breadandlife.org/" target="_blank">bread and life</a>
+        </li>
+        <li>
+          <a href="http://org2.salsalabs.com/o/6857/p/dia/action4/common/public/?action_KEY=26106" target="_blank">pledge to vote in 2018</a>
+        </li>
+        <li>
+          and many more...
+        </li>
+    </ul>
+  </div>
+
+  <div id="creativeCoding">
+    <div class="slider-wrap">
+      <div class="slider">
+
+        <div class="slides" id="creativeSlider">
+          <div id="slide-1">
+            <img src="img/creative-sketches/glsl-0.gif" alt="" />
+            <div class="overlay">
+              <div class="text">#glsl</div>
+            </div>
+          </div>
+          <div id="slide-2">
+            <img src="img/creative-sketches/glsl-1.gif" alt="" />
+            <div class="overlay">
+              <div class="text">#glsl</div>
+            </div>
+          </div>
+          <div id="slide-3">
+            <img src="img/creative-sketches/glsl-2.gif" alt="" />
+            <div class="overlay">
+              <div class="text">#glsl</div>
+            </div>
+          </div>
+          <div id="slide-4">
+            <img src="img/creative-sketches/pacman.gif" alt="" />
+            <div class="overlay">
+              <div class="text">#javaScript</div>
+            </div>
+          </div>
+          <div id="slide-5">
+            <img src="img/creative-sketches/perlinnoise-1.gif" alt="" />
+            <div class="overlay">
+              <div class="text">#javaScript</div>
+            </div>
+          </div>
+          <div id="slide-6">
+            <img src="img/creative-sketches/processing-0.gif" alt="" />
+            <div class="overlay">
+              <div class="text">#processing</div>
+            </div>
+          </div>
+          <div id="slide-7">
+            <img src="img/creative-sketches/countdown-clock.gif" alt="">
+            <div class="overlay">
+              <div class="text">#javascript</div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="https://rawgit.com/ruyadorno/simple-slider/master/dist/simpleslider.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    simpleslider.getSlider({
+      container: document.getElementById('creativeSlider'),
+      init: -100,
+      show: 0,
+      end: 100,
+      duration: 5,
+      delay: 5,
+      prop: 'top',
+      unit: '%'
+    });
+
+    $('button').click(function() {
+      $('.aboutMe').toggle();
+    });
+
+    $("#openFrontEnd").on("mouseenter", function() {
+      $("#frontEnd").show();
+    });
+    // $("#frontEnd").on("mouseleave", function() {
+    //   $(this).hide();
+    // });
+
+    $("#openCreative").on("mouseenter", function() {
+      $("#creativeCoding").show();
+    });
+    // $("#creativeCoding").on("mouseleave", function() { // $(this).hide(); // });
+
+    $(document).click(function(e) {
+
+      if (e.target != $('#frontEnd')[0]) {
+        $('#frontEnd').hide();
+      }
+
+      if (e.target != $('#creativeCoding')[0]) {
+        $('#creativeCoding').hide();
+      }
+
+    });
+
+  });
+</script>
+
+</html>
